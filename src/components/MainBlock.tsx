@@ -21,7 +21,7 @@ export const MainBlock = () => {
             height={smDown ? theme.spacing(25) : mdDown ? theme.spacing(50) : theme.spacing(125)}
 
             style={{
-                backgroundImage: `url(${mainBg})`,
+                backgroundImage: `linear-gradient(#afafaf9f, #0000007a), url(${mainBg})`,                
                 backgroundSize: "100%",
                 backgroundRepeat: "no-repeat"
             }}
