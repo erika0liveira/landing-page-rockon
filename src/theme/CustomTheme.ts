@@ -7,12 +7,20 @@ export const CustomTheme = createTheme({
       default: "#121212",
       paper: "#121212",
     },
+    primary: {
+      main: "#000000",
+    }
   },
   typography: {
-    fontFamily: "Metal Mania",
+    h1: {
+      fontFamily: "Metal Mania",
+    },
+
+    fontFamily: "Ubuntu Condensed",
 
     allVariants: {
       color: "black",
-    }
+      fontWeight: "bold"
+    },
   }
 });

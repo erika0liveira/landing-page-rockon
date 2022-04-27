@@ -1,4 +1,6 @@
-import { Paper, Box, Typography, useTheme, useMediaQuery } from "@mui/material";
+import { Paper, Box, Typography, useTheme, useMediaQuery, Button } from "@mui/material";
+import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
+
 
 import mainBg from "../assets/mainBg.jpg";
 
@@ -37,6 +39,9 @@ export const MainBlock = () => {
                 whiteSpace="nowrap"
                 overflow="hidden"
             >Em breve...</Typography>
+
+            <Button color="primary"><ArrowCircleDownIcon style={{ fontSize:"3rem"}}/></Button>
+
         </Box>
     );
 }
