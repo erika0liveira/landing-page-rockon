@@ -1,6 +1,11 @@
+import MainBlock from "./components/MainBlock";
+
 export const App = () => {
   return (
-    <p>Esse é o APP</p>
+    <>
+      <MainBlock />
+
+    </>
   );
 }
 
