@@ -1,4 +1,4 @@
-import { Paper, Box, Typography, useTheme, useMediaQuery, Button, Card } from "@mui/material";
+import { Paper, Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 
 import SecondaryBg from "../assets/SecondaryBg.jpg";
 import ShirtImg from "../assets/Camisetas.png";
