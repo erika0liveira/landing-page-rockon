@@ -40,7 +40,7 @@ export const MainBlock = () => {
                 variant={smDown ? "h6" : mdDown ? "h4" : "h3"}
                 whiteSpace="nowrap"
                 overflow="hidden"
-            >Em breve...</Typography>
+            >Rock is here</Typography>
 
             <Button color="primary"><ArrowCircleDownIcon style={{ fontSize:"3rem"}}/></Button>
 

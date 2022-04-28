@@ -5,7 +5,7 @@ import ShirtImg from "../assets/Camisetas.png";
 import LPImg from "../assets/LP.png";
 import PatchImg from "../assets/Patch.jpg";
 
-export const Produtos = () => {
+export const Products = () => {
     const theme = useTheme();
 
     const smDown = useMediaQuery(theme.breakpoints.down("sm"));
@@ -126,4 +126,4 @@ export const Produtos = () => {
     );
 }
 
-export default Produtos;
+export default Products;

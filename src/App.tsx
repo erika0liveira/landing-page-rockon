@@ -3,7 +3,7 @@ import { ThemeProvider } from "@mui/material";
 import { CustomTheme } from "./theme/CustomTheme";
 import MainBlock from "./components/MainBlock";
 import EmailBlock from "./components/EmailBlock";
-import Produtos from "./components/Produtos";
+import Products from "./components/Products";
 import Footer from "./components/Footer";
 
 export const App = () => {
@@ -15,7 +15,7 @@ export const App = () => {
 
         <MainBlock />  
         <EmailBlock /> 
-        <Produtos /> 
+        <Products /> 
         <Footer />  
 
       </ThemeProvider>
