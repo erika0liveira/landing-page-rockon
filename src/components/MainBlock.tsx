@@ -9,6 +9,8 @@ export const MainBlock = () => {
 
     const smDown = useMediaQuery(theme.breakpoints.down("sm"));
     const mdDown = useMediaQuery(theme.breakpoints.down("md"));
+    const lgDown = useMediaQuery(theme.breakpoints.down("lg"));
+    const xlDown = useMediaQuery(theme.breakpoints.down("xl"));
 
     return (
         <Box
@@ -18,9 +20,10 @@ export const MainBlock = () => {
             flexDirection="column"
             alignItems="center"
             justifyContent="center"
-
+            
+            borderRadius="0"
             width="100%"
-            height={smDown ? theme.spacing(25) : mdDown ? theme.spacing(50) : theme.spacing(125)}
+            height={smDown ? theme.spacing(25) : mdDown ? theme.spacing(50) : lgDown ? theme.spacing(55) : xlDown ? theme.spacing(70) : theme.spacing(125)}
 
             style={{
                 backgroundImage: `linear-gradient(#afafaf9f, #0000007a), url(${mainBg})`,                
