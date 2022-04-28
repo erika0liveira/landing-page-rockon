@@ -1,8 +1,7 @@
 import { Paper, Box, Typography, useTheme, useMediaQuery, Button } from "@mui/material";
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 
-
-import mainBg from "../assets/mainBg.jpg";
+import MainBg from "../assets/MainBg.jpg";
 
 export const MainBlock = () => {
     const theme = useTheme();
@@ -26,7 +25,7 @@ export const MainBlock = () => {
             height={smDown ? theme.spacing(25) : mdDown ? theme.spacing(50) : lgDown ? theme.spacing(55) : xlDown ? theme.spacing(70) : theme.spacing(125)}
 
             style={{
-                backgroundImage: `linear-gradient(#afafaf9f, #0000007a), url(${mainBg})`,                
+                backgroundImage: `linear-gradient(#afafaf9f, #0000007a), url(${MainBg})`,                
                 backgroundSize: "100%",
                 backgroundRepeat: "no-repeat"
             }}

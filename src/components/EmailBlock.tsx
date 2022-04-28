@@ -14,6 +14,8 @@ export const EmailBlock = () => {
 
             display="flex"
             justifyContent="center"
+            alignItems="center"
+            textAlign="center"
             borderRadius="0"
             width="100vw"
             maxWidth="100%"

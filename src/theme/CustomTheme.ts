@@ -22,7 +22,7 @@ export const CustomTheme = createTheme({
   },
   typography: {
     h1: {
-      fontFamily: "Metal Mania",
+      fontFamily: "Metal Mania, Arial",
     },
 
     fontFamily: "Ubuntu Condensed",
