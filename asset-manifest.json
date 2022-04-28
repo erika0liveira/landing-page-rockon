@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/landing-page-rockon/static/js/main.145fca60.js",
+    "static/media/SecondaryBg.jpg": "/landing-page-rockon/static/media/SecondaryBg.4e8c48055a45696d88a3.jpg",
+    "static/media/MainBg.jpg": "/landing-page-rockon/static/media/MainBg.b601ca10ef60747d0564.jpg",
+    "static/media/Patch.jpg": "/landing-page-rockon/static/media/Patch.94b9e4c0da35dd0bd85e.jpg",
+    "static/media/LP.png": "/landing-page-rockon/static/media/LP.8193486c48be182dc7ac.png",
+    "static/media/Camisetas.png": "/landing-page-rockon/static/media/Camisetas.22db2d84dd3c25e18d04.png",
+    "static/media/LogoRS.png": "/landing-page-rockon/static/media/LogoRS.a986bed72de48db5ee8a.png",
+    "index.html": "/landing-page-rockon/index.html",
+    "main.145fca60.js.map": "/landing-page-rockon/static/js/main.145fca60.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.145fca60.js"
+  ]
+}
