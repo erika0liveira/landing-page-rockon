@@ -13,8 +13,8 @@ export const App = () => {
       <ThemeProvider theme={theme}>
 
         <MainBlock />  
-        <Produtos />   
         <EmailBlock /> 
+        <Produtos />   
 
       </ThemeProvider>
     </>

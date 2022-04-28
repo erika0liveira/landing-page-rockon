@@ -12,6 +12,7 @@ export const Produtos = () => {
     const mdDown = useMediaQuery(theme.breakpoints.down("md"));
     const lgDown = useMediaQuery(theme.breakpoints.down("lg"));
     const xlDown = useMediaQuery(theme.breakpoints.down("xl"));
+    const xlUp = useMediaQuery(theme.breakpoints.up("xl"));
 
     return (
         <Box
@@ -21,7 +22,7 @@ export const Produtos = () => {
             justifyContent="center"
 
             maxWidth="100%"
-            height={smDown ? theme.spacing(150) : theme.spacing(100)}
+            height={smDown ? theme.spacing(155) : lgDown ? theme.spacing(125) : mdDown ? theme.spacing(130) : xlDown ? theme.spacing(150) : theme.spacing(110)}
 
             borderRadius="0"
             boxSizing="border-box"
@@ -35,32 +36,35 @@ export const Produtos = () => {
                 display="flex"
                 flexWrap="wrap"
                 gap="10"
-                justifyContent={smDown ? "" : "space-between"}
+                justifyContent={smDown ? "" : xlDown ? "space-around" : "space-between"}
 
                 width="90vw"
+                height={smDown ? "10vh" : xlDown ? "30vh" : "50vh" }
             >
                 <Box
-                    display={smDown ? "" : "flex"}
-                    justifyContent={smDown ? "" : "center"}
-                    alignSelf={smDown ? "" : "center"}
+                    display={xlDown ? "" : "flex"}
+                    justifyContent={xlDown ? "" : "center"}
+                    alignSelf={xlDown ? "" : "center"}
                     width="100%"   
-                    marginY={smDown ? "30px" : "0"}
+                    marginY={smDown ? "20px" : xlDown ? "50px" : "60px"}
                 >
                     <Typography
-                        variant={smDown ? "h5" : "h2"}
+                        variant={smDown ? "h5" : xlDown ? "h3" : "h2"}
                         color="#9a9898">
                         A melhor loja para se encontrar:
                     </Typography>
                 </Box>
 
                 <Box
+                    marginY={xlDown || xlUp ? "20px" : "0"}
+                    
                     sx={{
-                        width: smDown ? "100%" : "30%",
-                        height: smDown ? "40vh" : "60vh",
+                        width: smDown ? "100%" : xlDown ? "50%" : "30%",
+                        height: smDown ? "40vh" : xlDown ? "40vh" : "60vh",
                     }}
                 >
                     <Typography
-                        variant={smDown ? "h6" : "h2"}
+                        variant={smDown ? "h6" : xlDown ? "h4" : "h2"}
                         color="#9a9898"
                     >CAMISETAS</Typography>
 
@@ -74,13 +78,15 @@ export const Produtos = () => {
                 </Box>
 
                 <Box
+                    marginY={xlDown || xlUp ? "20px" : "0"}
+
                     sx={{
-                        width: smDown ? "100%" : "30%",
-                        height: smDown ? "40vh" : "60vh",
+                        width: smDown ? "100%" : xlDown ? "50%" : "30%",
+                        height: smDown ? "40vh" : xlDown ? "40vh" : "60vh",
                     }}
                 >
                     <Typography
-                        variant={smDown ? "h6" : "h2"}
+                        variant={smDown ? "h6" : xlDown ? "h4" : "h2"}
                         color="#9a9898"
                     >LPS</Typography>
 
@@ -95,13 +101,15 @@ export const Produtos = () => {
                 </Box>
 
                 <Box
+                    marginY={xlDown || xlUp ? "20px" : "0"}
+                    
                     sx={{
-                        width: smDown ? "100%" : "30%",
-                        height: smDown ? "40vh" : "60vh",
+                        width: smDown ? "100%" : xlDown ? "50%" : "30%",
+                        height: smDown ? "40vh" : xlDown ? "40vh" : "60vh",
                     }}
                 >
                     <Typography 
-                        variant={smDown ? "h6" : "h2"} 
+                        variant={smDown ? "h6" : xlDown ? "h4" : "h2"}
                         color="#9a9898"
                     >PATCHS</Typography>
 
